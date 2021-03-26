@@ -12,7 +12,6 @@ git pull
 name=$(date '+%Y-%m-%d-%H-%M-%S')
 find . -maxdepth 1 -type f -exec tar -czf "$name.tar.gz" {} +
 
-find . -name "*tar.gz" -exec mv {} raw-folder1/ \;
+find . -name "*tar.gz" -exec mv {} ready-for-delivery/ \;
 
-find . -maxdepth 1 -type f -exec rm -rf {} +
 
